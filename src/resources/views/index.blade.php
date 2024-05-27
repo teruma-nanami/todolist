@@ -11,6 +11,15 @@
       {{ session('message') }}
     </div>
   @endif
+  @if ($errors->any())
+    <div class="todo__alert--danger">
+      <ul>
+        @foreach ($errors->all() as $error)
+          <li>{{ $error }}</li>
+        @endforeach
+      </ul>
+    </div>
+  @endif
 </div>
 
 
@@ -32,7 +41,7 @@
       @foreach ($todos as $todo)
       <tr class="todo-table__row">
         <td class="todo-table__item">
-          <form action="" class="update-form" method="post">
+          <form action="/todos/update" class="update-form" method="post">
             <div class="update-form__item">
               <input type="text" class="update-form__item-input" name="content" value="{{ $todo['content'] }}">
             </div>
@@ -42,7 +51,7 @@
           </form>
         </td>
         <td class="todo-table__item">
-          <form action="" class="delete-form">
+          <form action="/todos/delete" class="delete-form" method="post">
             <div class="delete-form__button">
               <button class="delete-form__button-submit" type="submit">削除</button>
             </div>
