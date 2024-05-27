@@ -1,6 +1,14 @@
 .header{
-  margin: 0 auto;
+  background: #000;
   &__inner {
+    margin: 0 auto;
     padding: 15px 30px;
+    max-width: 1230px;
+  }
+  &__logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
   }
 }

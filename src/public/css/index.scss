@@ -1,0 +1,114 @@
+.todo__alert {
+  &--success{
+    padding: 10px 30px;
+    border-color: #badbcc;
+    background-color: #d0e7de;
+    color: #437e67;
+  }
+  &--danger {
+    padding: 10px 30px;
+    border-color: #f5c2c7;
+    border-color: #f8d7da;
+    color: #842029;
+    ul {
+      margin: 0;
+    }
+  }
+}
+
+.todo__content {
+  margin: 0 auto;
+  padding: 60px 15px;
+  max-width: 1230px;
+}
+
+.create-form {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  &__item {
+    width: 70%;
+  }
+  &__item-input {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  &__button {
+    width: 20%;
+  }
+  &__button-submit {
+    background: #000;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+  }
+}
+.todo-table {
+  margin: 30px auto;
+  width: 70%;
+  &__inner {
+    width: 100%;
+  }
+  &__row {
+    border-bottom: 1px solid #ddd;
+  }
+  &__header {
+    padding: 12px;
+    width: 20%;
+    font-weight: bold;
+    text-align: left;
+  }
+  &__item:first-of-type {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+.update-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__item {
+    width: 80%;
+    line-height: 50%;
+  }
+  &__item-input {
+    width: 100%;
+    border: none;
+  }
+  &__button {
+    width: 50px;
+  }
+  &__button-submit {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background: #00f;
+    color: #fff;cursor: pointer;
+    cursor: pointer;
+  }
+}
+
+.delete-form {
+  &__button{
+    width: 50px;
+  }
+  &__button-submit {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background: #f00;
+    color: #fff;
+    cursor: pointer;
+  }
+}
