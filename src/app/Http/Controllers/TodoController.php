@@ -19,6 +19,14 @@ class TodoController extends Controller
     }
 
     public function update(TodoRequest $request){
-        
+        // $id = $request->only(['id']);
+        $content = $request->only(['content']);
+        Todo::find($request->id)->update($content); // databaseを検索する場合はプロパティアクセスのみ
+        return redirect('/')->with('message', 'Todoを更新しました');
+    }
+
+    public function destroy(Request $request){ // deleteするときはバリデーションを実装すると削除できないので注意
+        Todo::find($request->id)->delete();
+        return redirect('/')->with('message', 'Todoを削除しました');
     }
 }
