@@ -5,10 +5,19 @@
     padding: 15px 30px;
     max-width: 1230px;
   }
+  &-utilities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   &__logo {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
+  }
+  &-nav__link {
+    color: #fff;
+    text-decoration: none;
   }
 }

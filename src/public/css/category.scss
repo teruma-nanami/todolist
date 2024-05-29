@@ -1,78 +1,62 @@
-.todo__alert {
-  &--success{
+.category_alert {
+  &--success {
     padding: 10px 30px;
     border-color: #badbcc;
-    background-color: #d0e7de;
-    color: #437e67;
+    background-color: #d1e7dd;
+    color: #0f5132;
   }
+
   &--danger {
-    padding: 10px 30px;
+    padding: 10px 0;
     border-color: #f5c2c7;
     background-color: #f8d7da;
     color: #842029;
-    ul {
-      margin: 0;
-    }
+  }
+  &--danger ul{
+    margin: 0;
   }
 }
-
-.todo__content {
+.category__content {
   margin: 0 auto;
-  padding: 30px 15px;
+  padding: 60px 15px;
   max-width: 1230px;
 }
 
-.section__title {
-  margin: 0 auto;
-  width: 70%;
-}
-
-
-.create-form, .search-form{
+.create-form {
   display: flex;
   justify-content: space-between;
-  width: 70%;
   margin: 0 auto;
-  margin-bottom: 15px;
+  width: 70%;
+  text-align: center;
   &__item {
-    display: flex;
     width: 70%;
   }
   &__item-input {
-    margin-right: 10px;
-    width: 70%;
     padding: 10px;
+    width: 100%;
     height: 40px;
     border: 1px solid #ddd;
     border-radius: 3px;
-  }
-  &__item-select {
-    padding: 10px;
-    width: 30%;
-    height: 40px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    appearance: none;
   }
   &__button {
     width: 20%;
   }
   &__button-submit {
-    background: #000;
-    border-radius: 3px;
-    color: #fff;
     padding: 10px;
-    height: 40px;
     width: 100%;
+    height: 40px;
     border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
     cursor: pointer;
   }
 }
-.todo-table {
+.category-table {
   margin: 30px auto;
   width: 70%;
   text-align: center;
-  &__inner {
+  &__inner{
     width: 100%;
   }
   &__row {
@@ -84,51 +68,45 @@
     font-weight: bold;
     text-align: left;
   }
-  &__header-span {
-    margin-right: 40%;
-  }
   &__item:first-of-type {
-    width: 100%;
     padding: 12px;
+    width: 90%;
   }
 }
-
 .update-form {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   &__item {
-    width: 40%;
+    width: 80%;
     line-height: 50%;
-  }
-  &__item-p {
-    font-size: 13px;
   }
   &__item-input {
     width: 100%;
+    outline: none;
     border: none;
   }
   &__button {
     width: 50px;
   }
   &__button-submit {
-    width: 100%;
     padding: 5px;
+    width: 100%;
     border: none;
     border-radius: 3px;
     background: #00f;
-    color: #fff;cursor: pointer;
+    color: #fff;
     cursor: pointer;
   }
 }
 
 .delete-form {
-  &__button{
+  &__button {
     width: 50px;
   }
   &__button-submit {
-    width: 100%;
     padding: 5px;
+    width: 100%;
     border: none;
     border-radius: 3px;
     background: #f00;
