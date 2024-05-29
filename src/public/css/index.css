@@ -16,30 +16,48 @@
 
 .todo__content {
   margin: 0 auto;
-  padding: 60px 15px;
+  padding: 30px 15px;
   max-width: 1230px;
 }
 
-.create-form {
+.section__title {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.create-form, .search-form {
   display: flex;
   justify-content: space-between;
   width: 70%;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
-.create-form__item {
+.create-form__item, .search-form__item {
+  display: flex;
   width: 70%;
 }
-.create-form__item-input {
-  width: 100%;
+.create-form__item-input, .search-form__item-input {
+  margin-right: 10px;
+  width: 70%;
   padding: 10px;
   height: 40px;
   border: 1px solid #ddd;
   border-radius: 3px;
 }
-.create-form__button {
+.create-form__item-select, .search-form__item-select {
+  padding: 10px;
+  width: 30%;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.create-form__button, .search-form__button {
   width: 20%;
 }
-.create-form__button-submit {
+.create-form__button-submit, .search-form__button-submit {
   background: #000;
   border-radius: 3px;
   color: #fff;
@@ -53,6 +71,7 @@
 .todo-table {
   margin: 30px auto;
   width: 70%;
+  text-align: center;
 }
 .todo-table__inner {
   width: 100%;
@@ -66,6 +85,9 @@
   font-weight: bold;
   text-align: left;
 }
+.todo-table__header-span {
+  margin-right: 40%;
+}
 .todo-table__item:first-of-type {
   width: 100%;
   padding: 12px;
@@ -77,8 +99,11 @@
   align-items: center;
 }
 .update-form__item {
-  width: 80%;
+  width: 40%;
   line-height: 50%;
+}
+.update-form__item-p {
+  font-size: 13px;
 }
 .update-form__item-input {
   width: 100%;
