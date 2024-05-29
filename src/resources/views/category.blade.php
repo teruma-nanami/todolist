@@ -12,9 +12,9 @@
           </div>
       @endif
       @if ($errors->any())
-        <div class="categoy__alert--danger">
+        <div class="category__alert--danger">
           <ul>
-            @foreach ($errors->any() as $error)
+            @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
             @endforeach
           </ul>
@@ -22,9 +22,10 @@
       @endif
     </div>
     <div class="category__content">
-      <form action="" class="create-form">
+      <form action="/categories" class="create-form" method="post">
+        @csrf
         <div class="create-form__item">
-          <input type="text" class="create-form__item-input">
+          <input type="text" name='name' class="create-form__item-input" value="{{ old('name') }}">
         </div>
         <div class="create-form__button">
           <button class="create-form__button-submit">作成</button>
@@ -40,20 +41,17 @@
             <td class="category-table__item">
               <form action="" class="update-form">
                 <div class="update-form__item">
-                  <input type="text" class="update-form__item-input" />
+                  <input type="text" class="update-form__item-input" value="{{ $category['name'] }}"/>
                 </div>
                 <div class="update-form__button">
-                  <button class="update_form__button-submit" type="submit">更新</button>
+                  <button class="update-form__button-submit" type="submit">更新</button>
                 </div>
               </form>
             </td>
             <td class="category-table__item">
               <form action="" class="delete-form">
-                <div class="delete-form__item">
-                  <input type="text" class="delete-form__item-input" />
-                </div>
                 <div class="delete-form__button">
-                  <button class="delete_form__button-submit" type="submit">更新</button>
+                  <button class="delete-form__button-submit" type="submit">削除</button>
                 </div>
               </form>
             </td>

@@ -1,16 +1,16 @@
-.category_alert--success {
+.category__alert--success {
   padding: 10px 30px;
   border-color: #badbcc;
   background-color: #d1e7dd;
   color: #0f5132;
 }
-.category_alert--danger {
+.category__alert--danger {
   padding: 10px 0;
   border-color: #f5c2c7;
   background-color: #f8d7da;
   color: #842029;
 }
-.category_alert--danger ul {
+.category__alert--danger ul {
   margin: 0;
 }
 
@@ -111,4 +111,5 @@
   background: #f00;
   color: #fff;
   cursor: pointer;
-}/*# sourceMappingURL=category.css.map */
+}
+/*# sourceMappingURL=category.css.map */
